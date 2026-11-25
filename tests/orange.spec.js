@@ -25,6 +25,7 @@ test('my first playwright code', async ({page})=> {
     await page.getByPlaceholder("Type for hints...").fill("User")
     await page.locator("//button[@type='submit']").click()
     const res=await page.getByText("Invalid").isVisible()
-    console.log("Ivalid "+ res)
+    console.log(res)
     page.close()
+    
 })
